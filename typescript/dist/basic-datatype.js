@@ -1,23 +1,17 @@
+"use strict";
 //basic datatypes 
-
 //number
-let phoneNumber : number = 1254786;
-
+let phoneNumber = 1254786;
 //string
-let firstName : string = 'rabby';
-
+let firstName = 'rabby';
 //boolean
-let isHere : boolean = true;
-
+let isHere = true;
 //null 
-let r : null = null;
-
+let r = null;
 //undefine 
-let value : undefined = undefined;
-
+let value = undefined;
 //typescript power
-let a : number;
-
+let a;
 // a = 'aaaaaah!', [showing error because we define 'a' is a number type data.]
 // a = false, [showing error because we define 'a' is a number type data.]
-a = 214555
+a = 214555;
