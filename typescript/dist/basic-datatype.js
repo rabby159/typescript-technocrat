@@ -22,3 +22,10 @@ let postal = [254, 657, 574];
 //Tuple basically is --> Array in process --> Order then --> Type of Value
 let coordination = [57, 67];
 let ageName = [24, 'Md Rabby', false];
+//Reference type --> Object
+const user = {
+    companyName: 'MyonBD',
+    firstName: 'Md',
+    // middleName : 'Rabby',
+    lastName: 'Khan'
+};

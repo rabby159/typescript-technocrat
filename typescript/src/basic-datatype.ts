@@ -34,3 +34,17 @@ let postal : number[] = [254, 657, 574];
 let coordination : [number, number] = [57, 67];
 
 let ageName : [number, string, boolean] = [24, 'Md Rabby', false];
+
+//Reference type --> Object
+
+const user :{
+    companyName : 'MyonBD';  //literal types
+    firstName : string;
+    middleName ? : string; // use ( ? ) optional types
+    lastName : string;
+} = {
+    companyName : 'MyonBD',
+    firstName : 'Md',
+    // middleName : 'Rabby',
+    lastName : 'Khan'
+}
