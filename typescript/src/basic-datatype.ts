@@ -38,7 +38,8 @@ let ageName : [number, string, boolean] = [24, 'Md Rabby', false];
 //Reference type --> Object
 
 const user :{
-    companyName : 'MyonBD';  //literal types
+    // companyName : 'MyonBD';  //literal types
+    readonly companyName : string; //literal types | readonly means we cannot change the value of companyName.
     firstName : string;
     middleName ? : string; // use ( ? ) optional types
     lastName : string;
@@ -47,4 +48,6 @@ const user :{
     firstName : 'Md',
     // middleName : 'Rabby',
     lastName : 'Khan'
-}
+};
+
+
