@@ -29,6 +29,12 @@
         ...mentors2
     }
 
+    //rest operator ( ... )
+    const bestFriend = (...friends : string[]) =>{
+        // console.log(`Hello! ${friend1}, ${friend2}, ${friend3}`);
+        friends.forEach((friend : string) => console.log(friend))
+    };
 
+    bestFriend('selim', 'ripon', 'rasel', 'juwel');
 
 }
