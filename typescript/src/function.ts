@@ -1,3 +1,4 @@
+{
 /**
  * Function {
  *  1.Normal Function
@@ -29,3 +30,5 @@ const poorUser = {
 const sum : number[] = [1, 2, 5, 6];
 
 const newArray : number[] = sum.map((elem : number) : number => elem * elem)
+
+}
