@@ -1,7 +1,7 @@
 {
 
 
-    //Object Destructing 
+    //Object Destructuring 
 
     const myInfo = {
         age : 24,
@@ -15,19 +15,10 @@
     const {age, name : {firstName}} = myInfo;
 
 
+    //array destructing
+    const friends = ['faria', 'emon', 'jesica', 'rafi', 'masud'];
 
-
-
-
-
-
-
-
-
-
-
-
-
+    const [, bestFriend, ...rest] = friends;
 
 
 
