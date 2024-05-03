@@ -32,4 +32,12 @@
         }
     ]
 
+    //generics tuple
+
+    const number : [number, number] = [10, 50]; //normal tuple
+
+    type GenericsTuple<X,Y> = [X, Y];
+    const number2 : GenericsTuple<number, number> = [10, 50]; //generics tuple
+    
+
 }
