@@ -1,4 +1,5 @@
-/**
+{
+    /**
  * Types assertion/ Types Narrowing
  */
 //-------------------------------------------
@@ -35,3 +36,4 @@ const result1 = kgTGm(1000) as number;
 const result2 = kgTGm("One Thousand Taka") as string; 
 
 //Here 'as' means, when I am developer and I know the better to find type then typescript.
+}

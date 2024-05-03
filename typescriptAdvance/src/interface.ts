@@ -1,4 +1,6 @@
-/**
+{
+
+    /**
  * Interface
  */
 
@@ -15,4 +17,5 @@ const user1 : UserWithPhone = {
     name :'Rabby',
     age : 22,
     phone : 54785442
+}
 }
