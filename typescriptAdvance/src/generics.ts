@@ -18,4 +18,18 @@
     // const isHaveJob : boolean[] = [true, false, false]; //normal way
     const isHaveJob : GenericsArray<boolean> = [true, false, false]; //generics
 
+
+    //Object Generics
+
+    const user : GenericsArray<{name : string, age: number}> = [
+        {
+            name : 'md rabby',
+            age : 256
+        },
+        {
+            name : 'bijoy',
+            age : 654
+        }
+    ]
+
 }
