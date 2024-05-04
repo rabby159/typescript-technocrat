@@ -36,6 +36,12 @@
     
     type PartialTodo = Partial<Todo>;
 
-
+    //readOnly Types
+    interface Point {
+        readonly x: number;
+        readonly y: number;
+    }
+    
+    type ReadonlyPoint = Readonly<Point>;
     
 }
