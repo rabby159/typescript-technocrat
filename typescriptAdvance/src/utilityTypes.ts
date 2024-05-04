@@ -20,5 +20,14 @@
     type TodoWithoutDescription = Omit<Todo, "description">;
 
 
+    //Require Types
+    interface Props {
+        a?: number;
+        b?: string;
+    }
+    
+    type RequiredProps = Required<Props>;
+
+
     
 }
