@@ -28,6 +28,14 @@
     
     type RequiredProps = Required<Props>;
 
+    //partial Types 
+    interface Todo {
+        title: string;
+        description: string;
+    }
+    
+    type PartialTodo = Partial<Todo>;
+
 
     
 }
