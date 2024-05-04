@@ -1,8 +1,10 @@
-/**
+{
+    /**
  * Generics and Interface
  */
 
-interface Developer<T>{
+//declare interface type
+interface Developer<T, X = null>{
     name : string;
     company : string;
     age : number;
@@ -10,13 +12,18 @@ interface Developer<T>{
         brand : string;
         price : number;
     };
-    smartWatch : T
+    smartWatch : T,
+    bike ? : X
 };
 
-const normalDev : Developer<{
+//genetics type
+type TUltra = {
     brand : string;
     price : number;
-}> = {
+}
+
+//object using Generics<type>
+const normalDev : Developer<TUltra> = {
     name : 'rabby',
     company : 'eSoft',
     age : 2547,
@@ -30,12 +37,19 @@ const normalDev : Developer<{
     }
 };
 
-const richDev : Developer<{
+//genetics type
+type AppleWatch = {
     brand : string;
     price : number;
     display : string;
     heartBeat : number;
-}> = {
+}
+interface Suzuky {
+    model : number;
+}
+
+//object using Generics<type>
+const richDev : Developer<AppleWatch, Suzuky> = {
     name : 'mezba',
     company : 'ph',
     age : 2547,
@@ -48,5 +62,9 @@ const richDev : Developer<{
         price : 150000,
         display : 'Bionic',
         heartBeat : 86
+    },
+    bike : {
+        model : 2545
     }
+}
 }
