@@ -43,5 +43,15 @@
     }
     
     type ReadonlyPoint = Readonly<Point>;
+
+
+    //Record types
+    type Obj = Record<string, string>
+
+    const obj : Obj = {
+        a : 'aaa',
+        b : 'bbb',
+        c : 'ccc'
+    }
     
 }
