@@ -1,4 +1,5 @@
-/**
+{
+    /**
  * Function with Generics
  */
 
@@ -15,3 +16,4 @@ const GenericsArray = <T>(param : T) : T[] => {
 const result1 = GenericsArray<string>('string')
 const result2 = GenericsArray<boolean>(true)
 const result3 = GenericsArray<number>(5468)
+}

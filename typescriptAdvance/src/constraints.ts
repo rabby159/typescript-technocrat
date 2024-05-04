@@ -1,4 +1,5 @@
-/**
+{
+    /**
  * Constrain In TS
  * 
  * Generic constraints are a powerful feature in TypeScript that allow you to write more flexible and type-safe code. They enable you to create generic functions, classes, and interfaces that work with a wide range of types while still enforcing certain conditions on those types.
@@ -25,3 +26,4 @@ const student2 = addCourseStudents({
     email : '@gmail.com',
     fee : 5500
 });
+}
