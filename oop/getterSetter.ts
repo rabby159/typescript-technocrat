@@ -20,18 +20,22 @@ class BankAccount {
         this._balance = _balance;
         this.details = details;
     };
+    //setter
+    set deposite(amount : number){
+        this._balance = this._balance + amount;
+    }
 
     //getter
-
     get Balance(){
         return this._balance;
     }
 }
 
 // Create an instance of BankAccount
-const poorAccount = new BankAccount(214, 'rabby', 20, 'This is personal only my child can access')
+const poorAccount = new BankAccount(214, 'rabby', 20, 'This is personal only my child can access');
+poorAccount.deposite = 100;
 
-const currentBalance = poorAccount.Balance;
+const currentBalance = poorAccount.Balance; //as like property 
 
 console.log(currentBalance);
 
