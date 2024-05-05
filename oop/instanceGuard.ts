@@ -39,12 +39,22 @@
         }
     };
 
+    //smart way to  use instanceof
+
+    const isDog = (animal : Animal) : animal is Dog =>{
+        return animal instanceof Dog;
+    } 
+
+    const isCat = (animal : Animal) : animal is Cat =>{
+        return animal instanceof Cat;
+    } 
+
     const getAnimal = (animal : Animal) => {
-        if(animal instanceof Dog){
-            dog.makeGhew();
+        if(isDog(animal)){
+            animal.makeGhew();
         }
-        else if(animal instanceof Cat){
-            cat.makeMeaw();
+        else if(isCat(animal)){
+            animal.makeMeaw();
         }
         else{
             animal.makeSound();
