@@ -1,8 +1,8 @@
 {
 
-    //Getter and Setter
+ // Getter and Setter
 
-    // Define a class BankAccount
+// Define a class BankAccount
 class BankAccount {
     // Public readonly property
     public readonly no: number;
@@ -20,23 +20,27 @@ class BankAccount {
         this._balance = _balance;
         this.details = details;
     };
-    //setter
-    set deposite(amount : number){
+
+    // Setter for depositing amount
+    set deposit(amount: number) {
         this._balance = this._balance + amount;
     }
 
-    //getter
-    get Balance(){
+    // Getter for retrieving balance
+    get Balance() {
         return this._balance;
     }
 }
 
 // Create an instance of BankAccount
 const poorAccount = new BankAccount(214, 'rabby', 20, 'This is personal only my child can access');
-poorAccount.deposite = 100;
+// Deposit amount using setter
+poorAccount.deposit = 100;
 
-const currentBalance = poorAccount.Balance; //as like property 
+// Get current balance using getter
+const currentBalance = poorAccount.Balance;
 
+// Print the current balance
 console.log(currentBalance);
 
 
