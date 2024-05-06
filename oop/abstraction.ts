@@ -1,5 +1,7 @@
 {
  // Abstraction in OOP
+ //1. interface
+ //2. abstract
 
 // Define an interface Vehicle specifying abstract methods for starting, stopping, and moving the vehicle
 interface Vehicle {
